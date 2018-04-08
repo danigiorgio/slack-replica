@@ -1,0 +1,484 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(1px,1px,1px,1px);
+}
+
+
+/* -------------------------------------------*/
+/* FONTS */
+/*--------------------------------------------*/
+
+@font-face { 
+	font-family: Slack-Tiempos; /*500*/
+	src: url("../fonts/tiempos-headline-semibold.woff2");
+}
+
+@font-face { 
+	font-family: Averta-Regular; /*400*/
+	src: url("../fonts/averta-regular.woff2");
+}
+
+@font-face { 
+	font-family: Averta-Bold; /*700*/
+	src: url("../fonts/averta-bold.woff2");
+}
+/* -------------------------------------------*/
+/* GENERAL */
+/*--------------------------------------------*/
+
+a:hover,
+a:active {
+    color: #3f46ad;    
+ }
+
+section {
+    padding: 50px 0;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+body {	
+	font-family: Averta-Regular,sans-serif;
+	color: #6d6f7b;
+	font-weight: 400;
+	line-height: 1.2;
+	letter-spacing: normal;
+	font-size: 1rem;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+/* -------------------------------------------*/
+/* NAV */
+/*--------------------------------------------*/
+
+.navbar {	
+	border-bottom: 1px solid #eee;
+	max-width: 100%;
+	top: 0;
+	background-color: #fff;
+}
+
+.navbar-fixed {
+  	 top: 0;
+   	 z-index: 100;
+   	 position: fixed;
+   	 width: 100%;
+   	 -webkit-animation: smoothScroll 1s forwards;
+  	 -moz-animation:  smoothScroll 1s forwards;
+   	 -o-animation:  smoothScroll 1s forwards;
+   	 animation: smoothScroll 1s forwards;
+}
+@-webkit-keyframes smoothScroll {
+ 	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+@-moz-keyframes smoothScroll {
+ 	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+@-o-keyframes smoothScroll {
+  	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.main-nav {	
+	float: right;
+	font-family: Averta-Regular;
+	font-weight: 400;
+	font-size: 1rem;
+	color: #6d6f7b;    
+	padding: 0.5rem 1.5rem;
+}
+
+.main-nav li {
+	display: inline-block;
+}
+
+ul a {
+	text-decoration: none;
+	font-family: Averta-Regular,sans-serif;
+	color: #6d6f7b;
+	font-weight: 400;
+	line-height: 1.2;
+	letter-spacing: normal;
+	font-size: 1rem;
+	display: inline-block;
+	padding: 1rem;
+}
+
+.workspaces {
+	border: 1px solid #556266;
+	border-radius: 5px;
+	padding: 0.5rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.workspaces:hover {
+	border: 1px solid #29339b;
+	color: #3f46ad;
+}
+
+.logo {
+	width: 10%;	
+	margin-left: 2rem;
+}
+
+/* -------------------------------------------*/
+/* HEADER */
+/*--------------------------------------------*/
+
+header {
+	padding: 4rem 1.4em 4rem 0;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;	
+	border-bottom: 1px solid #eee;
+}
+
+header h1 {
+	text-align: left;	
+	font-family: Slack-Tiempos;
+	font-weight: 500;
+	color: #323648;
+	line-height: 1.05;
+	letter-spacing: normal;
+	font-size: 4.8rem;
+	padding: 1.5rem 0 1.5rem 0;
+}
+
+.header-text {
+	font-family: Averta-Regular;
+	font-weight: 400;
+	line-height: 1.5;
+	font-size: 1.25rem;
+	text-align: left;
+	padding: 1.3rem 4rem 2rem 0;
+}
+
+.header-text p {
+	margin-bottom: 2rem;
+}
+
+.slack-img {
+ 	padding: 2.8rem 2rem 0 0;
+}
+
+button {
+	font-family: Averta-Bold;
+	text-transform: uppercase;
+	color: #fff;
+	background: #3f46ad;
+	border-radius: 4px;
+	padding: 1.3rem 2.3rem 1.3rem 2.3rem;
+	border: none;
+	font-weight: 700;
+	font-size: .9rem;
+	letter-spacing: 0.2px;
+	line-height: 1.3;
+	margin: 1.5rem 1.5rem;
+	cursor: pointer;
+}
+
+button:active,
+button:hover {
+	background-color: #1C299D;
+}
+
+.get-slack {
+	margin:  0;
+}
+
+.get-slack p {	
+	font-size: 0.8rem;
+	margin-top: 1rem;
+}
+
+.get-slack a {
+	text-decoration: none;
+	color: #1C299D;
+	border-bottom: 1px solid #3f46ad;
+}
+
+
+/* -------------------------------------------*/
+/* COMPANIES SECTION */
+/*--------------------------------------------*/
+
+.company {
+	text-align: center;
+	background: #F5F5F5;
+	border-bottom: 1px solid #eee;
+}
+
+.company h2 {
+	font-family: Slack-Tiempos;
+	font-weight: 500;
+	color: #323648;
+	line-height: 1.05;
+	letter-spacing: normal;
+	font-size: 1.8rem;
+	padding: 1.5rem 0 1.5rem 0;
+}
+
+#discover {
+	font-family: Averta-Bold;
+	text-transform: uppercase;
+	color: #3f46ad;
+	background: #fff;
+	border-radius: 6px;
+	padding: 1.3rem 2.3rem 1.3rem 2.3rem;
+	border: 0.5px solid #3f46ad;
+	font-weight: 700;
+	font-size: .9rem;
+	letter-spacing: 0.2px;
+	line-height: 1.3;
+	margin: 1.5rem 1.5rem;
+	cursor: pointer;
+}
+
+#discover:hover {
+	border: 2px solid #3f46ad;	
+	padding: 1.2rem 2.3rem 1.2rem 2.3rem;
+}
+
+.company {	
+	padding: 2.7rem 1.9em;
+}
+
+.brand-logos {
+	padding-top: 2rem;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.brand {
+	width: 33.3%;		
+	padding: 1.5rem 0.2rem 1.5rem 0.2rem;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.brand img {
+	padding: 0.3rem;
+}
+
+#ticketmaster,
+#latimes,
+#oracle {
+	border-bottom: none;
+}
+
+#capitalone, #oracle {
+	border-right: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
+}
+
+.airbnb, .latimes, .oracle, .capitalone, .harvard {	
+	max-width: 45%;
+	height: auto;
+}
+
+.latimes {
+	max-width: 65%;
+	height: auto;
+}
+
+/* -------------------------------------------*/
+/* MEDIUM SECTION / GET STARTED */
+/*--------------------------------------------*/
+
+.medium {	
+	padding: 1rem 1.4em 1rem 0;
+	border-bottom: 1px solid #eee;
+	display: flex;
+	justify-content: space-between;
+}
+
+.medium h3 {	
+	font-family: Slack-Tiempos;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #323648;
+	margin-top: 1.8rem;
+	margin-bottom: 3px;
+}
+
+.text h3, .text p {	
+	padding: 0 1.4em 0 4rem;
+}
+
+.text a {
+ 	color: #1C299D; 
+ 	text-decoration: none;
+	border-bottom: 1px solid #3f46ad;
+}
+
+.button-right {	
+	padding: 0 2.3rem 0 2.3rem;
+}
+
+
+/* -------------------------------------------*/
+/* LINKS SECTION */
+/*--------------------------------------------*/
+
+.slacklogo {
+	width: 6rem;
+}
+
+.extra-links {	
+	display: flex;
+	padding: 6rem 6rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.info {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0.9rem;
+	width: 70%;
+	padding-left: 4rem;
+}
+
+.links {
+	width: 25%;	
+	padding-bottom: 1.1rem;
+}
+
+.links p, .links h3 {
+	padding-bottom: 1.1rem;
+}
+
+.links a {
+	text-decoration: none;
+	color: #6d6f7b;
+}
+
+.links h3{
+	font-family: Averta-Bold;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* -------------------------------------------*/
+/* FOOTER */
+/*--------------------------------------------*/
+
+footer {  
+	background: #F5F5F5;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1rem 4rem 1rem 4rem;	
+}
+
+select {
+	border: none;
+	background: transparent;	
+	font-family: Averta-Bold;
+	font-size: 0.9rem;
+	color: #5b5e6d;
+	font-weight: 700;
+	outline: none;
+}
+
+.footer-menu {	
+	justify-content: center;
+}
+
+.footer-menu a {
+	text-decoration: none;	
+	color: #5b5e6d;
+}
+
+.footer-menu p {		
+	font-family: Averta-Bold;
+	font-weight: 700;
+	text-align: left;	
+	padding: 1rem;
+	font-size: 0.9rem;
+	display: inline-block;
+}
+
+footer ul {
+ 	display: flex;
+  	justify-content: flex-end;
+}
+
+.social-links img {
+	width: 20px;
+	height: 20px;	
+	margin: 1rem 0.5rem;	
+}
+
+.footer-menu p:hover,
+.ion-social-twitter:hover,
+.ion-social-facebook:hover,
+.ion-social-youtube:hover {
+    	color: #3f46ad;
+}
+
