@@ -444,6 +444,7 @@ select {
 	color: #5b5e6d;
 	font-weight: 700;
 	outline: none;
+	cursor: pointer;
 }
 
 .footer-menu {	
