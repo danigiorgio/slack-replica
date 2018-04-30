@@ -497,12 +497,12 @@ body {
 }
 
 .main-nav {
-	padding: 0.3rem 0.3rem;
+	margin-top: 1rem;
 }
 
 .main-nav li a{
 	font-size: 12px;
-	padding: 0.8rem;
+	padding: 0.4rem;
 }
 
 .navbar-fixed {
@@ -512,8 +512,8 @@ body {
 .workspaces {
 	border-radius: 3px;
 	padding: 0.3rem;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
+	margin-left: 0.3rem;
+	margin-right: 0.3rem;
 }
 
 .logo {
@@ -522,7 +522,11 @@ body {
 }
 
 .slack-img img {
-	max-width: 230px;
+	max-width: 200px;
+}
+
+.slack-img {	
+ 	padding: 2rem 0.5rem 0 0;
 }
 
 header {
@@ -612,12 +616,12 @@ footer {
 }
 
 .footer-menu p {
-		font-size: 0.7rem;
-		font-weight: normal;
+	font-size: 0.7rem;
+	font-weight: normal;
 }
 
 .footer-menu p {
-		padding-left: 1rem;
+	padding-left: 1rem;
 }
 
 
