@@ -195,7 +195,8 @@ header {
 	max-width: 100%;
 	display: flex;
 	justify-content: center;	
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #eee;	
+	clear: both;
 }
 
 header h1 {
@@ -225,6 +226,7 @@ header h1 {
 .slack-img {
  	padding: 2.8rem 2rem 0 0;
 }
+
 
 button {
 	font-family: Averta-Bold;
@@ -483,3 +485,140 @@ footer ul {
     	color: #3f46ad;
 }
 
+
+/* -------------------------------------------*/
+/* MEDIA QUERIES */
+/*--------------------------------------------*/
+
+@media only screen and (max-width: 450px) {
+
+body {
+	overflow-x: hidden;
+}
+
+.main-nav {
+	padding: 0.3rem 0.3rem;
+}
+
+.main-nav li a{
+	font-size: 12px;
+	padding: 0.8rem;
+}
+
+.navbar-fixed {
+	display: none;
+}
+
+.workspaces {
+	border-radius: 3px;
+	padding: 0.3rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.logo {
+	width: 20%;	
+	margin-left: 1rem;
+}
+
+.slack-img img {
+	max-width: 230px;
+}
+
+header {
+	padding: 1rem 1.4em 1rem 0;	
+	display: flex;
+	justify-content: center;
+}
+
+.header-text {	
+	padding: 1rem 0 1rem 1rem;
+}
+
+header h1 {
+ 	font-size: 2rem;
+}
+
+header p {
+	font-size: 60%;
+}
+
+button  {
+	padding: 0.7rem 1rem 0.7rem 1rem;
+}
+
+.medium {
+	padding-bottom: 2.5rem;
+}
+
+.medium h3, p  {
+	font-size: 90%;
+}
+
+.brand {
+	width:33.3%;		
+	padding: 1.5rem 0.2rem 1.5rem 0.2rem;
+}
+
+.airbnb, .latimes, .oracle, .capitalone, .harvard {	
+	max-width: 75%;
+	height: auto;
+}
+
+.brand img {
+	padding: 0.1rem;
+}
+
+#ticketmaster img {
+	width: 80px;
+}
+
+.get-started {
+	font-size: 70%;
+	padding: 0.7rem 1rem 0.7rem 1rem;
+}
+
+.get-slack a, .medium a {
+	font-size: 70%;	
+}
+
+.slacklogo {
+	width: 30%;
+}
+
+.extra-links {	
+	padding: 1rem 1rem 1rem 0rem;
+}
+
+.info {
+	font-size: 70%;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.links {
+	width: 35%;		
+	padding-bottom: 0.8rem;
+}
+
+footer {
+	padding: 1rem 1rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.footer-menu p {
+		font-size: 0.7rem;
+		font-weight: normal;
+}
+
+.footer-menu p {
+		padding-left: 1rem;
+}
+
+
+}
