@@ -490,7 +490,9 @@ footer ul {
 /* MEDIA QUERIES */
 /*--------------------------------------------*/
 
-@media only screen and (max-width: 450px) {
+/*phone*/
+
+@media (min-width: 320px) and (max-width: 480px) {
 
 body {
 	overflow-x: hidden;
@@ -624,5 +626,139 @@ footer {
 	padding-left: 1rem;
 }
 
+
+}
+
+/*medium res tablets*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+   
+body {
+	overflow-x: hidden;
+}
+  
+.main-nav li a{
+	font-size: 90%;
+	padding: 0.4rem;
+}
+
+.navfixed {	
+	margin-bottom: 1rem;
+}
+
+.slack-img img {
+	max-width: 280px;
+}
+
+.slack-img {	
+ 	padding: 2rem 0.5rem 0 0;
+}
+
+header {
+	padding: 1rem 1.4em 1rem 0;	
+	display: flex;
+	justify-content: center;
+}
+
+.header-text {	
+	padding: 1rem 0 1rem 1rem;
+}
+
+header h1 {
+ 	font-size: 2.5rem;
+}
+
+header p {
+	font-size: 1rem;
+}
+
+#ticketmaster img {
+	width: 100px;
+}
+
+.slacklogo {
+	width: 4rem;
+}
+
+.info {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0.7rem;
+	width: 85%;
+	padding-left:2rem;
+}
+
+.extra-links {
+    display: flex;
+    padding: 4rem 2rem 4rem 2rem;
+} 
+  
+}
+
+
+/*tablets*/ 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+body {
+	overflow-x: hidden;
+}
+  
+.main-nav li a{
+	font-size: 90%;
+	padding: 0.4rem;
+}
+
+.navfixed {	
+	margin-bottom: 1rem;
+}
+
+.slack-img img {
+	max-width: 400px;
+}
+
+.slack-img {	
+ 	padding: 2rem 0.5rem 0 0;
+}
+
+header {
+	padding: 1rem 1.4em 1rem 0;	
+	display: flex;
+	justify-content: center;
+}
+
+.header-text {	
+	padding: 1rem 0 1rem 1rem;
+}
+
+header h1 {
+ 	font-size: 3rem;
+}
+
+header p {
+	font-size: 1rem;
+}
+
+#ticketmaster img {
+	width: 120px;
+}
+
+.slacklogo {
+	width: 5rem;
+}
+
+.info {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0.9rem;
+	width: 82%;
+	padding-left: 3rem;
+}
+
+.extra-links {
+    display: flex;
+    padding: 4rem 2rem 4rem 2rem;
+}
 
 }
